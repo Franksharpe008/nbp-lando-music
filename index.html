@@ -34,11 +34,21 @@
         }
 
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
             font-size: 1.5rem;
             font-weight: bold;
             background: linear-gradient(45deg, #ff6b6b, #feca57);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
         }
 
         .nav-links {
@@ -372,7 +382,10 @@
 </head>
 <body>
     <nav>
-        <div class="logo">NBP Lando</div>
+        <div class="logo">
+            <img src="logo.png" alt="NBP Lando Logo">
+            NBP Lando
+        </div>
         <ul class="nav-links">
             <li><a href="#music">Music</a></li>
             <li><a href="#about">About</a></li>
