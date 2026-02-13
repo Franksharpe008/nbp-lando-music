@@ -103,9 +103,24 @@
 
         .hero h1 {
             font-size: 4rem;
-            margin-bottom: 1rem;
+            margin: 2rem 0 1rem 0;
             text-transform: uppercase;
             letter-spacing: 0.2em;
+        }
+
+        .hero-logo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ff6b6b;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.5);
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
         }
 
         .hero h1 span {
@@ -396,6 +411,7 @@
 
     <section class="hero">
         <div class="hero-content">
+            <img src="logo.png" alt="NBP Lando" class="hero-logo">
             <h1>
                 <span>👑</span>
                 NBP Lando
