@@ -14,7 +14,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2d1b1b 100%);
             color: #fff;
             line-height: 1.6;
         }
@@ -39,7 +39,7 @@
             gap: 0.5rem;
             font-size: 1.5rem;
             font-weight: bold;
-            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            background: linear-gradient(45deg, #ffd700, #ff6b35);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -49,6 +49,7 @@
             height: 50px;
             border-radius: 50%;
             object-fit: cover;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
         }
 
         .nav-links {
@@ -75,7 +76,7 @@
             justify-content: center;
             text-align: center;
             padding: 2rem;
-            background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(254, 202, 87, 0.1) 100%);
+            background: radial-gradient(circle at center, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
             position: relative;
             overflow: hidden;
         }
@@ -113,8 +114,8 @@
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid #ff6b6b;
-            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.5);
+            border: 5px solid #ffd700;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5), 0 0 50px rgba(255, 215, 0, 0.3);
             animation: pulse 3s ease-in-out infinite;
         }
 
@@ -140,17 +141,19 @@
         .cta-button {
             display: inline-block;
             padding: 1rem 3rem;
-            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            background: linear-gradient(45deg, #ffd700, #ff6b35);
             color: #000;
             text-decoration: none;
             font-weight: bold;
             border-radius: 50px;
             transition: transform 0.3s, box-shadow 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
         }
 
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
         }
 
         /* Music Player Section */
@@ -174,7 +177,7 @@
             transform: translateX(-50%);
             width: 100px;
             height: 3px;
-            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            background: linear-gradient(45deg, #ffd700, #ff6b35);
         }
 
         .player-container {
@@ -222,14 +225,14 @@
         }
 
         .track-item.active {
-            background: linear-gradient(45deg, rgba(255, 107, 107, 0.2), rgba(254, 202, 87, 0.2));
-            border-left: 3px solid #ff6b6b;
+            background: linear-gradient(45deg, rgba(255, 215, 0, 0.15), rgba(255, 107, 53, 0.15));
+            border-left: 3px solid #ffd700;
         }
 
         .play-icon {
             font-size: 1.5rem;
             margin-right: 1rem;
-            color: #ff6b6b;
+            color: #ffd700;
         }
 
         .track-info {
@@ -280,7 +283,8 @@
 
         .social-link:hover {
             transform: translateY(-10px);
-            background: linear-gradient(45deg, rgba(255, 107, 107, 0.2), rgba(254, 202, 87, 0.2));
+            background: linear-gradient(45deg, rgba(255, 215, 0, 0.15), rgba(255, 107, 53, 0.15));
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
         }
 
         .social-link i {
@@ -339,7 +343,7 @@
 
         .contact-form button {
             padding: 1rem;
-            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            background: linear-gradient(45deg, #ffd700, #ff6b35);
             color: #000;
             border: none;
             border-radius: 10px;
@@ -347,11 +351,13 @@
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
         }
 
         .contact-form button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
         }
 
         /* Footer */
