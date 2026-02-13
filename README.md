@@ -20,7 +20,7 @@ A modern, responsive music artist showcase website built with HTML, CSS, and Jav
 
 ## Deployment
 
-This site is deployed on Vercel: [Live Link Coming Soon]
+This site is deployed on Vercel: https://nbp-lando-music.vercel.app
 
 ## Customization
 
